@@ -1,0 +1,18 @@
+import { Module } from '@nestjs/common';
+import { HttpModule } from '@nestjs/axios';
+import { ConfigModule } from '@nestjs/config';
+import { UnsplashController } from './unsplash.controller';
+import { UnsplashService } from './unsplash.service';
+import { FilesModule } from 'src/files/files.module';
+
+@Module({
+  imports: [
+    HttpModule,
+    ConfigModule,
+    FilesModule,
+  ],
+  controllers: [UnsplashController],
+  providers: [UnsplashService],
+  exports: [UnsplashService],
+})
+export class UnsplashModule {}
