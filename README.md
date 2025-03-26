@@ -8,6 +8,11 @@ Files API V1
 $ docker compose up --build
 ```
 
+### API Documentation at
+```
+http://localhost:3000/api
+```
+
 ## Run tests
 
 ```bash
