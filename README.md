@@ -2,13 +2,23 @@
 
 Files API V1
 
-## Run project
+## Instructions to run the project
+
+### 1. Create .env file
+
+Copy the .env.example and fill the required variables
 
 ```bash
-$ docker compose up --build
+cp .env.example .env
+```
+### 2. Build docker container
+
+```bash
+docker compose up --build
 ```
 
-### API Documentation at
+### 3. Use SWAGGER Documentation to test the API
+The swagger documentation is served at:
 ```
 http://localhost:3000/api
 ```
